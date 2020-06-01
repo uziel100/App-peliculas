@@ -1,0 +1,110 @@
+
+header{            
+    transition: .3s ease all;    
+}
+
+body{    
+    background: #fff;
+    transition: .3s ease all;
+}
+
+body.dark{
+    background: #111111;
+    transition: .3s ease all;
+}
+
+body.dark header h1 {
+  color: #C8C8C8;
+}
+
+body.dark header hr{
+    border: 1px solid white;
+}
+
+body.dark .card-body{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.switch{
+    margin-top: -4%;
+    background: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    float: right;
+    cursor: pointer;    
+    display: flex;
+    outline: none;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3 ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .switch.active {
+    background: orange;
+    color: #000;
+  }
+  
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+  
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+
+.card{
+    border-radius: 20px;
+    border: none;  
+    outline: none;
+}
+
+.card-body{
+border-radius: 10px;
+}
+
+#box-movies{
+    transition: all 800ms;
+}
+ 
+figure{
+    overflow: hidden;
+}
+
+
+#img-movie:hover {    
+    transform: scale(1.1);
+    opacity: 0.8;    
+    transition: all 700ms;    
+}
+
+#loading{
+    margin-top: 10%;
+}
+
+.card-body:hover{
+    background-color: rgb(240, 239, 239);
+}
